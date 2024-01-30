@@ -61,7 +61,7 @@ button{
     height: 40px;
 }
 
-.topbar > div:first-child{
+.topbar > div:first-of-type{
     display: flex;
     gap: 20px;
     align-items: center;
