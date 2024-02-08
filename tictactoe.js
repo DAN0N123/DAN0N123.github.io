@@ -11,8 +11,15 @@ const makePlayer = function(name){
     } 
     return { playerName, score, addScore }
 }
-let player1 = makePlayer('Player 1')
-let player2 = makePlayer('Player 2')
+const chooseName = function(which_player){
+    let name = prompt(`Provide name for player ${which_player}: `)
+    if (name === null || name === undefined){
+        return chooseName()
+    }
+    return name
+}
+let player1 = makePlayer(chooseName('one'));
+let player2 = makePlayer(chooseName('two'));
 
 
 const makeTile = function(id){
@@ -156,7 +163,7 @@ const gameboard = (function() {
         buttonDiv.appendChild(newGameButton);
         winScreen.appendChild(winText);
         winScreen.appendChild(buttonDiv);
-        bigbox.appendChild(winScreen);
+        bigbox.appendChild(winScreen);1
     }
     const markTile = function(which, symbol){
         boardArr[which].symbol = symbol;
@@ -176,8 +183,8 @@ const displayController = (function() {
     const newGame = function(){
         console.log('yo');
         gameboard.resetGame();
-        player1 = makePlayer(prompt('Provide name for player one: '));
-        player2 = makePlayer(prompt('Provide name for player two: '));
+        player1 = makePlayer(chooseName('one'));
+        player2 = makePlayer(chooseName('two'));    
         gameboard.drawScoreboard();
     };
     return { newGame, removeWinScreen};
