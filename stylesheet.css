@@ -34,7 +34,7 @@ body{
     color: black;
     font-size: 26px;
     font-family: Heebo-bold;
-    /* font-weight: 600; */
+    font-weight: 600;
 }
 
 .header p:first-of-type{
@@ -120,26 +120,6 @@ input.invalid{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container{
     display: inline-grid;
     gap: 15px; 
@@ -194,4 +174,21 @@ input.invalid{
     grid-area: 5 / 1 / 6 / 3;
     background-color: #393F4D;
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
