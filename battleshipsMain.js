@@ -198,7 +198,9 @@ export class Gameboard{
                 if(this.isGameOver()){
                     if(this.isAi) this.game.player.winGame(); else this.game.ai.winGame() 
                 }
-            if(!this.isAi) return; else this.game.round++
+            if(this.isAi){
+                return
+            }else this.game.round++;
                 
             }else{
                 blinkDiv(this.DOM);
