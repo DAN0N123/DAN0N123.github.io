@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'ROBOTO';
-    src: url('../MISC/ROBOTO.ttf');
+    src: url('./ROBOTO.ttf');
 }
 
 *{
@@ -46,7 +46,7 @@ nav{
     outline: 1px solid black;
     filter: saturate(150%);
     cursor: pointer;
-    background-image: url('../MISC/water2.png');
+    background-image: url('./water2.png');
 }
 
 .overlay{
@@ -103,11 +103,11 @@ nav{
 }
 
 .board .box.hit{
-    background-image: url('../MISC/waterBombed.png') !important;
+    background-image: url('./waterBombed.png') !important;
 }
 
 .board .box.hit.ship{
-    background-image: url('../MISC/shipHit.png') !important;
+    background-image: url('./shipHit.png') !important;
 }
 
 .name{
