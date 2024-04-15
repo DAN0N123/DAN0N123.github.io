@@ -8,7 +8,7 @@ export class Game {
         this.round = 0;
         this.playerBox = document.querySelector('.player');
         this.aiBox = document.querySelector('.AI');
-        const PLAYER = new Player('PLAYER');
+        const PLAYER = new Player(prompt('Enter your username: '));
         const AI = new Player('AI');
         this.player = PLAYER;
         this.ai = AI;
