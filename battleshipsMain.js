@@ -195,10 +195,10 @@ export class Gameboard{
             if(!box.classList.contains('hit')){
                 myShip.hit()
                 box.classList.add('hit');
-                this.game.round++
                 if(this.isGameOver()){
                     if(this.isAi) this.game.player.winGame(); else this.game.ai.winGame() 
                 }
+                return
             }else{
                 blinkDiv(this.DOM);
                 return
