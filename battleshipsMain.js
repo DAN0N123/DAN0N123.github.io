@@ -199,7 +199,7 @@ export class Gameboard{
                     if(this.isAi) this.game.player.winGame(); else this.game.ai.winGame() 
                 }
             if(this.isAi){
-                return
+                return;
             }else this.game.round++;
                 
             }else{
