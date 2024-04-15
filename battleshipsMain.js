@@ -115,7 +115,7 @@ export class Gameboard{
                 for(const child of playerBoard.children){
                     if(child.classList.contains('box') && !child.classList.contains('ship')){
                         child.style.backgroundColor = 'none';
-                        child.style.backgroundImage = "url('../MISC/water2.png')";
+                        child.style.backgroundImage = "url('./water2.png')";
                     }
                 }
                 if(event.target.classList.contains('box')){
