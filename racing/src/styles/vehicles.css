@@ -1,0 +1,20 @@
+.car img{
+    height: 80px;
+    width: 50px;
+}
+
+.hide{
+    display: none;
+}
+
+.car{
+    position: absolute;
+}
+.bot{
+    margin-left: 327px;
+    margin-top: -400px;
+}
+.player{
+    margin-left: 327px;
+    margin-top: -400px;
+}
